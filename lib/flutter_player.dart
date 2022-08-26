@@ -9,10 +9,11 @@ class FlutterPlayer extends StatelessWidget {
 
   String streamName;
   String url = "";
+  String quality="";
 
-  FlutterPlayer({required this.streamName}) {
+  FlutterPlayer({required this.streamName,required this.quality}) {
     this.url =
-    "http://94.237.55.155/?url=ws://94.237.49.12:8000/live/${streamName}.flv";
+    "http://94.237.55.155/?url=ws://94.237.49.12:8000/live/${streamName}_${quality}.flv";
   }
 
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
