@@ -13,7 +13,7 @@ class FlutterPlayer extends StatelessWidget {
 
   FlutterPlayer({required this.streamName}) {
     this.url =
-    "http://94.237.55.155/?url=ws://5.22.220.66:8000/live/${streamName}.flv";
+    "http://94.237.55.155/?url=ws://94.237.49.12:8000/live/${streamName}.flv";
   }
 
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
